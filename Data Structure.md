@@ -13,7 +13,7 @@ ImageId = { type: String, max: 64 }
 	password : { type : String, length : 64 },
 	name : { type : String, max : 100 },
 	profileImage : ImageId,
-	statusMessage : { type : String, max : 80 },
+	statusMessage : { type : String, max : 20 },
 	currentGoals : [Goal],
 	friends : [ObjectId], 
 	activities : [Activity],
@@ -25,6 +25,7 @@ ImageId = { type: String, max: 64 }
 		A: Integer,
 		N: Integer
 	} // TODO: need some discussion with Logan Lee
+	  // will be uploaded at HiddenestLee/hyde-engine
 }
 ```
 
